@@ -1,0 +1,73 @@
+/* Update Profile Container */
+.updateProfile {
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #fff5bc, #cec1ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vmax;
+  box-sizing: border-box;
+}
+
+/* Update Profile Form */
+.updateProfileForm {
+  background-color: white;
+  width: 50%;
+  max-width: 600px; /* Adjust based on your design */
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 2vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Update Profile Form Inputs */
+.updateProfileInputs {
+  padding: 1vmax 2vmax;
+  width: 80%;
+  border-radius: 40px;
+  border: 1px solid #ccc;
+  margin: 2vmax 0;
+  font: 100 1.2rem "Roboto", sans-serif;
+  outline: none;
+}
+
+/* Update Profile Form File Input */
+.updateProfileForm > input[type="file"] {
+  border-radius: 30px;
+  margin: 2vmax 0;
+}
+
+/* Update Profile Form File Upload Button */
+.updateProfileForm > input[type="file"]::-webkit-file-upload-button {
+  background-color: rgb(38, 63, 173);
+  color: white;
+  width: 100%;
+  padding: 1vmax;
+  border-radius: 30px;
+  border: none;
+  font: 100 1.2rem "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 600px) {
+  .updateProfileForm {
+    width: 100%;
+  }
+
+  .updateProfileForm > input {
+    padding: 4vw 8vw;
+    margin: 4vw 0;
+    font-size: 4vw;
+  }
+
+  .updateProfileForm > input[type="file"] {
+    width: 100%;
+  }
+
+  .updateProfileForm > input[type="file"]::-webkit-file-upload-button {
+    width: 70%;
+  }
+}

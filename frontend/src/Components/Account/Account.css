@@ -1,0 +1,120 @@
+/* General Account Container */
+.account {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  height: 92vh;
+  background-color: #f0f2f5;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Left Section */
+.accountleft {
+  background-image: linear-gradient(to right, #cfc06e, #421bd6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vmax;
+  box-sizing: border-box;
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Section */
+.accountright {
+  padding: 2vmax;
+  box-sizing: border-box;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accountright img {
+  transition: transform 0.5s ease;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.accountright img:hover {
+  transform: scale(1.1);
+}
+
+/* Headings */
+.accountright > h5 {
+  margin: 2vmax 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Links */
+.accountright > a {
+  color: rgb(73, 73, 73);
+  text-decoration: none;
+  font: 100 1.2rem "Roboto";
+  text-align: center;
+  margin-top: 2vmax;
+  padding: 0.5vmax 1vmax;
+  transition: all 0.5s;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+}
+
+.accountright > a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.253);
+  background-color: #d1d1d1;
+}
+
+/* Div Containers */
+.accountright > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1vmax;
+  width: 100%;
+}
+
+.accountright > div > button {
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+  padding: 0.5vmax 1vmax;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+.accountright > div > button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.253);
+  background-color: #45a049;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 600px) {
+  .account {
+    grid-template-columns: 1fr;
+  }
+
+  .accountleft {
+    padding: 1vmax;
+    min-height: 90vh;
+  }
+
+  .accountright {
+    padding: 1vmax;
+  }
+
+  .accountright > a {
+    font: 100 1rem "Roboto";
+    margin-top: 6vw;
+  }
+}

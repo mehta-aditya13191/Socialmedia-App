@@ -1,0 +1,56 @@
+.commentUser {
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.507);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.commentUser:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.commentUser > a {
+  display: flex;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  align-self: flex-start;
+  transition: all 0.5s;
+  margin-right: auto;
+}
+
+.commentUser img {
+  height: 3vmax;
+  width: 3vmax;
+  margin-right: 1rem;
+  border-radius: 100%;
+  border: 3px solid rgb(255, 201, 201);
+  object-fit: cover;
+}
+
+.commentUser > a:hover {
+  transform: translateY(-10px);
+  color: #007bff;
+}
+
+.commentUser > button {
+  color: red;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 4px;
+}
+
+.commentUser > button:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+  transform: translateY(-5px);
+}

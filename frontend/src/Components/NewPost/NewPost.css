@@ -1,0 +1,97 @@
+/* New Post Page Container */
+.newPost {
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #fff5bc, #cec1ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vmax;
+  box-sizing: border-box;
+}
+
+/* New Post Form Container */
+.newPostForm {
+  background-color: white;
+  width: 50%;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 3vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.newPostForm:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Image Preview */
+.newPostForm > img {
+  width: 100%;
+  max-height: 300px; /* Limit image height for better layout */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 2vmax;
+}
+
+/* Post Title */
+.newPostForm > h3 {
+  margin: 1vmax 0;
+  font-size: 1.5rem; /* Increased font size for better visibility */
+}
+
+/* Input Fields */
+.newPostForm > input[type="text"],
+.newPostForm > input[type="file"] {
+  width: 100%;
+  padding: 1.5vmax;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin: 1.5vmax 0;
+  font: 100 1.2rem "Roboto", sans-serif;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.newPostForm > input[type="text"]:focus,
+.newPostForm > input[type="file"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Customized File Input Button */
+.newPostForm > input[type="file"]::-webkit-file-upload-button {
+  background-color: #007bff;
+  color: white;
+  width: 100%;
+  padding: 1.5vmax;
+  border-radius: 20px;
+  border: none;
+  font: 100 1.2rem "Roboto", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newPostForm > input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 600px) {
+  .newPostForm {
+    width: 90%;
+  }
+
+  .newPostForm > input[type="text"],
+  .newPostForm > input[type="file"] {
+    padding: 4vw;
+    margin: 2vmax 0;
+  }
+
+  .newPostForm > input[type="file"]::-webkit-file-upload-button {
+    padding: 4vw;
+  }
+}
